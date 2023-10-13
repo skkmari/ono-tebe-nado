@@ -47,11 +47,11 @@
 }
 
 .address {
+  max-width: 238px;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 132%;
-  max-width: 238px;
 }
 
 .header_address {
@@ -293,7 +293,6 @@
 
 .footer {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   margin: 0px 50px 90px;
 }
