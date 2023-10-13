@@ -1,16 +1,9 @@
-/* место для вашего кода */
-
-body {
-  position: center;
-  max-width: 1440px;
-  margin: auto;
-}
 
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
-  height: 109px;
+  /*height: 109px;*/
   margin: 92px 51px 92px 51px;
 }
 
@@ -58,6 +51,7 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 132%;
+  max-width: 238px;
 }
 
 .header_address {
@@ -72,9 +66,9 @@ body {
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   /*height: 757px;*/
-  background-image: url(/images/cover.jpg); 
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,6 +148,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -197,7 +192,7 @@ body {
 
 .card {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -209,19 +204,18 @@ body {
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_paint {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card_title {
-  z-index: -1;
   padding: 50px 40px 0px;
   color: #FFF;
   font-weight: 700;
@@ -230,13 +224,6 @@ body {
   text-decoration: underline;
   text-transform: uppercase;
 }
-
-/*
-.card_title_highlighted {
-  display: inline-block;
-  border-bottom: 1px solid #FFF;
-}
-*/
 
 .card_text {
   padding: 0px 40px 50px;
@@ -258,9 +245,8 @@ body {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  grid-template-rows: 250px 2fr 2fr;
+  grid-template-rows: 250px 1fr;
   column-gap: 25px;
-  min-height: 487px;
   margin: 0 50px 183px;
 }
 
@@ -291,15 +277,18 @@ body {
 
 .about_text {
   grid-column-start: 2;
-  grid-row-start: span 2;
-  margin-bottom: 25px;
+  grid-row-start: 2;
   color: #000;
   font-weight: 400;
   font-size: 20px;
 }
 
-.about_text:last-child {
-  margin-bottom: 0px;
+.about_text-paragraph {
+  margin-bottom: 25px;
+}
+
+.about_text-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
@@ -316,17 +305,6 @@ body {
   font-size: 18px;
   list-style: none;
 }
-
-/*
-.footer_menu-link {
-  border-bottom: 1px #000 solid;
-  text-decoration: none;
-}
-
-.footer_menu-link_active {
-  border-bottom: none;
-}
-*/
 
 .footer_social-list {
   display: flex;
